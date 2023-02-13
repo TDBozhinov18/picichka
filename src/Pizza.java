@@ -1,15 +1,15 @@
 public class Pizza {
     private String name;
-    private String dought;
+    private Dought dought;
     private Topping topping;
 
     public Pizza(){
         this.name="Milka";
-        this.dought="bqlo";
+        this.dought=new Dought();
         this.topping=new Topping();
     }
 
-    public Pizza(String name, String dought, Topping topping) {
+    public Pizza(String name, Dought dought, Topping topping) {
         this.name = name;
         this.dought = dought;
         this.topping = topping;
@@ -23,11 +23,11 @@ public class Pizza {
         this.name = name;
     }
 
-    public String getDought() {
+    public Dought getDought() {
         return dought;
     }
 
-    public void setDought(String dought) {
+    public void setDought(Dought dought) {
         this.dought = dought;
     }
 
